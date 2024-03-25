@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Derivadas</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="calculator">
+        <h1>Calculadora de Derivadas</h1>
+        <label for="functionInput">Ingrese la función:</label><br />
+        <input type="text" id="functionInput" class="input-field" placeholder="Por ejemplo, 2x^3 + 5x^2 - 3x + 1" /><br />
+        <button onclick="openModal()" class="btn-calculate">Calcular Derivada</button><br />
+        <div id="resultado"></div>
+    </div>
+
+    <!-- Modal -->
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <p id="modalResult"></p>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
